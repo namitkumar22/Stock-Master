@@ -180,7 +180,7 @@ st.markdown("""
 
 def fetch_data_to_csv():
     symbols = fetch_all_nse_symbols()
-    fetch_nse_live_data(symbols[:500])
+    fetch_nse_live_data(symbols[:400])
 
 def predict_profit_and_tell_best_stock():
     try:
