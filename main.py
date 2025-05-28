@@ -310,7 +310,7 @@ class RobustNSEPredictor:
         self.fetch_interval = 180  # 3 minutes instead of 10 seconds
         self.rate_limit_delay = 2  # 2 seconds between API calls
         self.max_retries = 3
-        self.symbols_batch_size = 50  # Reduce batch size to avoid rate limiting
+        self.symbols_batch_size = 100  # Reduce batch size to avoid rate limiting
         
     def safe_fetch_data_to_csv(self):
         """Safely fetch data with rate limiting and error handling"""
