@@ -323,8 +323,8 @@ class RobustNSEPredictor:
         self.error_queue = queue.Queue()
         self.status_queue = queue.Queue()
         self.last_fetch_time = None
-        self.fetch_interval = 300  # 5 minutes for better stability
-        self.rate_limit_delay = 3  # 3 seconds between API calls
+        self.fetch_interval = 20  # 5 minutes for better stability
+        self.rate_limit_delay = 1  # 3 seconds between API calls
         self.max_retries = 3
         self.symbols_batch_size = 100  # Smaller batch for reliability
         self.is_fetching = False
